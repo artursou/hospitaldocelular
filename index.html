@@ -76,14 +76,27 @@
         }
         .container1 {
             background-color: #333;
-            padding: 10px;
             color: white;
             font-size: 14px;
-            text-align: center; 
-            margin: 0 auto; 
-            max-width: 100%; 
+            text-align: left;  
         }
-        
+        .container1 p {
+            margin: 4px 0;
+        }
+        footer {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        #footer1{
+            text-align: right;
+            margin-top: 15px;
+        }
+        #footer1 p{
+            margin: 4px 0;
+        }
 
         
         @media only screen and (max-width: 600px) {
@@ -112,6 +125,20 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
+                gap: 0px;
+            }
+            .container1 p {
+                margin: 2px 0;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+            }
+            #footer1{
+                text-align: center;
+            }
+            #footer1 p{
+                margin: 2px 0;
             }
         }
     </style>
@@ -149,12 +176,14 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Hospital do Celular.</p>
-        <p>Todos os direitos reservados.</p>
         <div class="container1">
             <p>Endereço:📍SCLN 408, Boco E, Loja 18.</p>
             <p>Telefone:☎️ 3340-1552, 3349-6867. </p>
             <p> E-mail:✉️ hospitaldocelular@uol.com.br</p>
+        </div>
+        <div id="footer1">
+            <p>&copy; 2024 Hospital do Celular.</p>
+            <p>Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
